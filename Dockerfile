@@ -2,8 +2,8 @@
 FROM ubuntu
 MAINTAINER bluezip <serin212@hotmail.com>
 
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install git nano imagemagick -y
+RUN apt-get update
+RUN apt-get install git nano imagemagick python g++ -y
 
 RUN mkdir /Development
 RUN cd /Development && git clone git://github.com/joyent/node
